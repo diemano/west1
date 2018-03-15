@@ -11,10 +11,7 @@ O CMS utilizado é wordpress e o tema é baseado no tema Odin da WPbrasil.
 - Wordpress 4.9.4
 
 ## Equipe
-Diemano Nóbrega
-Lucas Cezar
-Jaelson Jacinto
-Pablo Cunha
+Diemano Nóbrega, Lucas Cezar, Jaelson Jacinto, Pablo Cunha
 
 ## Licença
 Todos os direitos reservados
