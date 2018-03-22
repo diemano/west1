@@ -223,7 +223,7 @@ class Odin_Metabox {
 	protected function process_fields( $args, $post_id ) {
 		$id      = $args['id'];
 		$type    = $args['type'];
-		$options = isset( $args['options'] ) ? $args['options'] : '';
+		$options = $args['options'];
 		$attrs   = isset( $args['attributes'] ) ? $args['attributes'] : array();
 
 		// Gets current value or default.
@@ -399,6 +399,7 @@ class Odin_Metabox {
 	 * @return string          HTML of the field.
 	 */
 	protected function field_select( $id, $current, $options, $attrs ) {
+        var_dump($id);
 		// If multiple add a array in the option.
 		$multiple = ( in_array( 'multiple', $attrs ) ) ? '[]' : '';
 
