@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 22/03/2018 às 19:45
--- Versão do servidor: 10.1.25-MariaDB
--- Versão do PHP: 5.6.31
+-- Generation Time: Mar 23, 2018 at 09:02 PM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `west1`
+-- Database: `west1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_commentmeta`
+-- Table structure for table `wp_commentmeta`
 --
 
 CREATE TABLE `wp_commentmeta` (
@@ -38,7 +38,7 @@ CREATE TABLE `wp_commentmeta` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_comments`
+-- Table structure for table `wp_comments`
 --
 
 CREATE TABLE `wp_comments` (
@@ -60,7 +60,7 @@ CREATE TABLE `wp_comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_comments`
+-- Dumping data for table `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -69,7 +69,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_links`
+-- Table structure for table `wp_links`
 --
 
 CREATE TABLE `wp_links` (
@@ -91,7 +91,7 @@ CREATE TABLE `wp_links` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_options`
+-- Table structure for table `wp_options`
 --
 
 CREATE TABLE `wp_options` (
@@ -102,7 +102,7 @@ CREATE TABLE `wp_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_options`
+-- Dumping data for table `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -138,7 +138,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:0:{}', 'yes'),
+(33, 'active_plugins', 'a:1:{i:0;s:47:\"wp-accurate-geolocation/wp-accu-geolocation.php\";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -215,7 +215,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (107, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (108, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (109, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(110, 'cron', 'a:4:{i:1521747180;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1521785376;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1521828586;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(110, 'cron', 'a:4:{i:1521871776;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1521914986;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1521919980;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (124, 'can_compress_scripts', '1', 'no'),
 (135, 'theme_mods_twentyseventeen', 'a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1521137400;s:4:\"data\";a:4:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-2\";a:0:{}s:9:\"sidebar-3\";a:0:{}}}}', 'yes'),
 (136, 'current_theme', 'Odin', 'yes'),
@@ -223,16 +223,24 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (138, 'theme_switched', '', 'yes'),
 (139, 'widget_odin_facebook_like_box', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (147, 'theme_mods_wpbrasil-odin-3fa0943', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1521142211;s:4:\"data\";a:2:{s:19:\"wp_inactive_widgets\";a:0:{}s:12:\"main-sidebar\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}}', 'yes'),
-(304, '_site_transient_timeout_theme_roots', '1521744166', 'no'),
-(305, '_site_transient_theme_roots', 'a:1:{s:5:\"west1\";s:7:\"/themes\";}', 'no'),
-(307, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-4.9.4.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-4.9.4.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"4.9.4\";s:7:\"version\";s:5:\"4.9.4\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"4.7\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1521742368;s:15:\"version_checked\";s:5:\"4.9.4\";s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:4:\"core\";s:4:\"slug\";s:7:\"default\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:5:\"4.9.4\";s:7:\"updated\";s:19:\"2018-03-20 15:15:55\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/translation/core/4.9.4/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}}', 'no'),
-(308, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1521742369;s:7:\"checked\";a:1:{s:5:\"west1\";s:5:\"2.3.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
-(309, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1521742370;s:7:\"checked\";a:2:{s:19:\"akismet/akismet.php\";s:5:\"4.0.2\";s:9:\"hello.php\";s:3:\"1.6\";}s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.0.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.0.3.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:7:\"default\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";s:7:\"default\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.4\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907\";s:2:\"2x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";s:7:\"default\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";s:7:\"default\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no');
+(312, '_site_transient_timeout_theme_roots', '1521830976', 'no'),
+(313, '_site_transient_theme_roots', 'a:1:{s:5:\"west1\";s:7:\"/themes\";}', 'no'),
+(315, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-4.9.4.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-4.9.4.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"4.9.4\";s:7:\"version\";s:5:\"4.9.4\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"4.7\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1521829177;s:15:\"version_checked\";s:5:\"4.9.4\";s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:4:\"core\";s:4:\"slug\";s:7:\"default\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:5:\"4.9.4\";s:7:\"updated\";s:19:\"2018-03-22 18:30:41\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/translation/core/4.9.4/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}}', 'no'),
+(316, '_site_transient_timeout_browser_f0d2477a5b6eb719524f2642ebe300d1', '1522433977', 'no'),
+(317, '_site_transient_browser_f0d2477a5b6eb719524f2642ebe300d1', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"64.0.3282.167\";s:8:\"platform\";s:9:\"Macintosh\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(318, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1521829178;s:7:\"checked\";a:1:{s:5:\"west1\";s:5:\"2.3.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
+(319, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1521829178;s:7:\"checked\";a:3:{s:19:\"akismet/akismet.php\";s:5:\"4.0.2\";s:9:\"hello.php\";s:3:\"1.6\";s:47:\"wp-accurate-geolocation/wp-accu-geolocation.php\";s:5:\"1.0.0\";}s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.0.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.0.3.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:7:\"default\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";s:7:\"default\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.4\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907\";s:2:\"2x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";s:7:\"default\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";s:7:\"default\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"wp-accurate-geolocation/wp-accu-geolocation.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:37:\"w.org/plugins/wp-accurate-geolocation\";s:4:\"slug\";s:23:\"wp-accurate-geolocation\";s:6:\"plugin\";s:47:\"wp-accurate-geolocation/wp-accu-geolocation.php\";s:11:\"new_version\";s:5:\"1.0.0\";s:3:\"url\";s:54:\"https://wordpress.org/plugins/wp-accurate-geolocation/\";s:7:\"package\";s:66:\"https://downloads.wordpress.org/plugin/wp-accurate-geolocation.zip\";s:5:\"icons\";a:0:{}s:7:\"banners\";a:0:{}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(320, '_transient_timeout_plugin_slugs', '1521915627', 'no'),
+(321, '_transient_plugin_slugs', 'a:3:{i:0;s:19:\"akismet/akismet.php\";i:1;s:9:\"hello.php\";i:2;s:47:\"wp-accurate-geolocation/wp-accu-geolocation.php\";}', 'no'),
+(322, 'recently_activated', 'a:0:{}', 'yes'),
+(323, 'agl_settings', 'a:11:{s:14:\"gcp_maximumAge\";s:8:\"Infinity\";s:22:\"gcp_enableHighAccuracy\";s:4:\"true\";s:11:\"gcp_timeout\";i:6000;s:15:\"php_date_format\";s:11:\"Y-m-d H:i:s\";s:13:\"is_ask_onload\";s:3:\"yes\";s:14:\"is_ask_onclick\";s:3:\"yes\";s:11:\"is_db_store\";s:3:\"yes\";s:16:\"is_db_user_store\";s:3:\"yes\";s:15:\"is_cookie_store\";s:3:\"yes\";s:15:\"cookie_life_hrs\";i:24;s:14:\"plugin_enabled\";s:3:\"yes\";}', 'yes'),
+(324, 'agl_data_5ab5487425c85_a204dd7674be78dd820b537456164a63', 'a:13:{s:8:\"latitude\";s:18:\"-7.118192800000001\";s:9:\"longitude\";s:11:\"-34.8370314\";s:8:\"altitude\";s:1:\"0\";s:8:\"accuracy\";s:2:\"20\";s:16:\"altitudeAccuracy\";s:1:\"0\";s:7:\"heading\";s:3:\"NaN\";s:5:\"speed\";s:3:\"NaN\";s:10:\"error_code\";s:0:\"\";s:13:\"error_message\";s:0:\"\";s:8:\"php_time\";i:1521830004;s:8:\"php_date\";s:19:\"2018-03-23 18:33:24\";s:15:\"php_date_format\";s:11:\"Y-m-d H:i:s\";s:7:\"user_id\";i:0;}', 'no'),
+(325, 'agl_data_5ab54f761c20d_2f949189c6256cae8f8a2452187358b8', 'a:13:{s:8:\"latitude\";s:18:\"-7.118239999999999\";s:9:\"longitude\";s:10:\"-34.837035\";s:8:\"altitude\";s:3:\"NaN\";s:8:\"accuracy\";s:2:\"20\";s:16:\"altitudeAccuracy\";s:3:\"NaN\";s:7:\"heading\";s:3:\"NaN\";s:5:\"speed\";s:3:\"NaN\";s:10:\"error_code\";s:0:\"\";s:13:\"error_message\";s:0:\"\";s:8:\"php_time\";i:1521831798;s:8:\"php_date\";s:19:\"2018-03-23 19:03:18\";s:15:\"php_date_format\";s:11:\"Y-m-d H:i:s\";s:7:\"user_id\";i:1;}', 'no');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_postmeta`
+-- Table structure for table `wp_postmeta`
 --
 
 CREATE TABLE `wp_postmeta` (
@@ -243,7 +251,7 @@ CREATE TABLE `wp_postmeta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_postmeta`
+-- Dumping data for table `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -281,7 +289,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_posts`
+-- Table structure for table `wp_posts`
 --
 
 CREATE TABLE `wp_posts` (
@@ -311,19 +319,12 @@ CREATE TABLE `wp_posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_posts`
+-- Dumping data for table `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2018-03-15 15:09:36', '2018-03-15 18:09:36', 'Bem-vindo ao WordPress. Esse é o seu primeiro post. Edite-o ou exclua-o, e então comece a escrever!', 'Olá, mundo!', '', 'publish', 'open', 'open', '', 'ola-mundo', '', '', '2018-03-15 15:09:36', '2018-03-15 18:09:36', '', 0, 'http://localhost/west1/?p=1', 0, 'post', '', 1),
 (2, 1, '2018-03-15 15:09:36', '2018-03-15 18:09:36', 'Este é o exemplo de uma página. É diferente de um post de blog porque é estática e pode aparecer em menus de navegação (na maioria dos temas). A maioria das pessoas começam com uma página \'Sobre\' que as apresenta aos potenciais visitantes do site. Você pode usar algo como:\n\n<blockquote>Oi! Sou um estudante de Biologia e gosto de esportes e natureza. Nos fins de semana pratico futebol com meus amigos no clube local. Eu moro em Valinhos e fiz este site para falar sobre minha cidade.</blockquote>\n\n...ou algo como:\n\n<blockquote>A empresa Logos foi fundada em 1980, e tem provido o comércio local com o que há de melhor em informatização. Localizada em Recife, nossa empresa tem se destacado como um das que também contribuem para o descarte correto de equipamentos eletrônicos substituídos.</blockquote>\n\nComo um novo usuário WordPress, vá ao seu <a href=\"http://localhost/west1/wp-admin/\">Painel</a> para excluir este conteúdo e criar o seu. Divirta-se!', 'Página de exemplo', '', 'publish', 'closed', 'open', '', 'pagina-exemplo', '', '', '2018-03-15 15:09:36', '2018-03-15 18:09:36', '', 0, 'http://localhost/west1/?page_id=2', 0, 'page', '', 0),
-(3, 1, '2018-03-15 15:09:47', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2018-03-15 15:09:47', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?p=3', 0, 'post', '', 0),
-(4, 1, '2018-03-15 16:33:00', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-15 16:33:00', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=4', 0, 'pais', '', 0),
-(5, 1, '2018-03-15 16:39:48', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-15 16:39:48', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=5', 0, 'pais', '', 0),
-(6, 1, '2018-03-15 16:40:28', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-15 16:40:28', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=6', 0, 'pais', '', 0),
-(7, 1, '2018-03-15 16:53:54', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-15 16:53:54', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=7', 0, 'pais', '', 0),
-(8, 1, '2018-03-15 16:56:45', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-15 16:56:45', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=8', 0, 'pais', '', 0),
-(9, 1, '2018-03-15 16:59:46', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-15 16:59:46', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=9', 0, 'pais', '', 0),
 (10, 1, '2018-03-19 13:31:32', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-19 13:31:32', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=10', 0, 'pais', '', 0),
 (11, 1, '2018-03-19 13:36:45', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-19 13:36:45', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=11', 0, 'pais', '', 0),
 (12, 1, '2018-03-19 13:36:50', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2018-03-19 13:36:50', '0000-00-00 00:00:00', '', 0, 'http://localhost/west1/?post_type=pais&p=12', 0, 'pais', '', 0),
@@ -450,7 +451,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_termmeta`
+-- Table structure for table `wp_termmeta`
 --
 
 CREATE TABLE `wp_termmeta` (
@@ -463,7 +464,7 @@ CREATE TABLE `wp_termmeta` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_terms`
+-- Table structure for table `wp_terms`
 --
 
 CREATE TABLE `wp_terms` (
@@ -474,7 +475,7 @@ CREATE TABLE `wp_terms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_terms`
+-- Dumping data for table `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -483,7 +484,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_term_relationships`
+-- Table structure for table `wp_term_relationships`
 --
 
 CREATE TABLE `wp_term_relationships` (
@@ -493,7 +494,7 @@ CREATE TABLE `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_term_relationships`
+-- Dumping data for table `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -502,7 +503,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_term_taxonomy`
+-- Table structure for table `wp_term_taxonomy`
 --
 
 CREATE TABLE `wp_term_taxonomy` (
@@ -515,7 +516,7 @@ CREATE TABLE `wp_term_taxonomy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_term_taxonomy`
+-- Dumping data for table `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -524,7 +525,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_usermeta`
+-- Table structure for table `wp_usermeta`
 --
 
 CREATE TABLE `wp_usermeta` (
@@ -535,7 +536,7 @@ CREATE TABLE `wp_usermeta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_usermeta`
+-- Dumping data for table `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -558,12 +559,13 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:2:\"::\";}'),
 (19, 1, 'session_tokens', 'a:2:{s:64:\"493f98055543d6f892193c5d0333a6f77dd5d33f7949c4d3e4dc4a604e5414e0\";a:4:{s:10:\"expiration\";i:1521805043;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:121:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\";s:5:\"login\";i:1521632243;}s:64:\"3e99aa20d8e93eb0b11ee4aedfea3ce229045238c6ab49417ab6e92ac94cd552\";a:4:{s:10:\"expiration\";i:1521910313;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:121:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\";s:5:\"login\";i:1521737513;}}'),
 (20, 1, 'wp_user-settings', 'libraryContent=browse'),
-(21, 1, 'wp_user-settings-time', '1521478861');
+(21, 1, 'wp_user-settings-time', '1521478861'),
+(22, 1, 'agl_data', 'a:13:{s:8:\"latitude\";s:18:\"-7.118239999999999\";s:9:\"longitude\";s:10:\"-34.837035\";s:8:\"altitude\";s:3:\"NaN\";s:8:\"accuracy\";s:2:\"20\";s:16:\"altitudeAccuracy\";s:3:\"NaN\";s:7:\"heading\";s:3:\"NaN\";s:5:\"speed\";s:3:\"NaN\";s:10:\"error_code\";s:0:\"\";s:13:\"error_message\";s:0:\"\";s:8:\"php_time\";i:1521831798;s:8:\"php_date\";s:19:\"2018-03-23 19:03:18\";s:15:\"php_date_format\";s:11:\"Y-m-d H:i:s\";s:7:\"user_id\";i:1;}');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `wp_users`
+-- Table structure for table `wp_users`
 --
 
 CREATE TABLE `wp_users` (
@@ -580,18 +582,18 @@ CREATE TABLE `wp_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `wp_users`
+-- Dumping data for table `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'superadmin@mail.com', '$P$BJ3NIMtIsLPUuTHgGXETHtCzvYoxhv/', 'superadminmail-com', 'pablo.cunha.dantas@gmail.com', '', '2018-03-15 18:09:36', '', 0, 'superadmin@mail.com');
 
 --
--- Índices de tabelas apagadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `wp_commentmeta`
+-- Indexes for table `wp_commentmeta`
 --
 ALTER TABLE `wp_commentmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -599,7 +601,7 @@ ALTER TABLE `wp_commentmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Índices de tabela `wp_comments`
+-- Indexes for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
   ADD PRIMARY KEY (`comment_ID`),
@@ -610,21 +612,21 @@ ALTER TABLE `wp_comments`
   ADD KEY `comment_author_email` (`comment_author_email`(10));
 
 --
--- Índices de tabela `wp_links`
+-- Indexes for table `wp_links`
 --
 ALTER TABLE `wp_links`
   ADD PRIMARY KEY (`link_id`),
   ADD KEY `link_visible` (`link_visible`);
 
 --
--- Índices de tabela `wp_options`
+-- Indexes for table `wp_options`
 --
 ALTER TABLE `wp_options`
   ADD PRIMARY KEY (`option_id`),
   ADD UNIQUE KEY `option_name` (`option_name`);
 
 --
--- Índices de tabela `wp_postmeta`
+-- Indexes for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -632,7 +634,7 @@ ALTER TABLE `wp_postmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Índices de tabela `wp_posts`
+-- Indexes for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
   ADD PRIMARY KEY (`ID`),
@@ -642,7 +644,7 @@ ALTER TABLE `wp_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
--- Índices de tabela `wp_termmeta`
+-- Indexes for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -650,7 +652,7 @@ ALTER TABLE `wp_termmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Índices de tabela `wp_terms`
+-- Indexes for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
   ADD PRIMARY KEY (`term_id`),
@@ -658,14 +660,14 @@ ALTER TABLE `wp_terms`
   ADD KEY `name` (`name`(191));
 
 --
--- Índices de tabela `wp_term_relationships`
+-- Indexes for table `wp_term_relationships`
 --
 ALTER TABLE `wp_term_relationships`
   ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
   ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
 
 --
--- Índices de tabela `wp_term_taxonomy`
+-- Indexes for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
   ADD PRIMARY KEY (`term_taxonomy_id`),
@@ -673,7 +675,7 @@ ALTER TABLE `wp_term_taxonomy`
   ADD KEY `taxonomy` (`taxonomy`);
 
 --
--- Índices de tabela `wp_usermeta`
+-- Indexes for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
   ADD PRIMARY KEY (`umeta_id`),
@@ -681,7 +683,7 @@ ALTER TABLE `wp_usermeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Índices de tabela `wp_users`
+-- Indexes for table `wp_users`
 --
 ALTER TABLE `wp_users`
   ADD PRIMARY KEY (`ID`),
@@ -690,64 +692,75 @@ ALTER TABLE `wp_users`
   ADD KEY `user_email` (`user_email`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `wp_commentmeta`
+-- AUTO_INCREMENT for table `wp_commentmeta`
 --
 ALTER TABLE `wp_commentmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT de tabela `wp_comments`
+-- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
   MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
--- AUTO_INCREMENT de tabela `wp_links`
+-- AUTO_INCREMENT for table `wp_links`
 --
 ALTER TABLE `wp_links`
   MODIFY `link_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT de tabela `wp_options`
+-- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=327;
+
 --
--- AUTO_INCREMENT de tabela `wp_postmeta`
+-- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
 --
--- AUTO_INCREMENT de tabela `wp_posts`
+-- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
   MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+
 --
--- AUTO_INCREMENT de tabela `wp_termmeta`
+-- AUTO_INCREMENT for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT de tabela `wp_terms`
+-- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
   MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
--- AUTO_INCREMENT de tabela `wp_term_taxonomy`
+-- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
   MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
--- AUTO_INCREMENT de tabela `wp_usermeta`
+-- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
 --
--- AUTO_INCREMENT de tabela `wp_users`
+-- AUTO_INCREMENT for table `wp_users`
 --
 ALTER TABLE `wp_users`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
