@@ -18,9 +18,65 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
 	<?php endif; ?>
 	<?php wp_head(); ?>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBH0-F81NtENxOGxVR1GYxuUfL6T2oBzhA"></script> 
+<script type="text/javascript"> 
+  var geocoder;
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+} 
+//Get the latitude and the longitude;
+function successFunction(position) {
+    var lat = position.coords.latitude;
+    var lng = position.coords.longitude;
+    codeLatLng(lat, lng)
+}
+
+function errorFunction(){
+    alert("Geocoder failed");
+}
+
+function initialize() {
+    geocoder = new google.maps.Geocoder();
+}
+
+function codeLatLng(lat, lng) {
+  var latlng = new google.maps.LatLng(lat, lng);
+  geocoder.geocode({'latLng': latlng}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      console.log(results)
+      if (results[1]) {
+        //formatted address
+        alert(results[0].formatted_address)
+        //find country name
+        for (var i=0; i<results[0].address_components.length; i++) {
+            for (var b=0; b<results[0].address_components[i].types.length;b++) {
+
+              //there are different types that might hold a city admin_area_lvl_1 usually does in come cases looking for sublocality type will be more appropriate
+                if (results[0].address_components[i].types[b] == "administrative_area_level_2") {
+                    //this is the object you are looking for
+                    city= results[0].address_components[i];
+                    break;
+                }
+            }
+        }
+        //city data
+        document.getElementById("demo").innerHTML = city.long_name;
+        //find country name
+
+
+        } else {
+          alert("No results found");
+        }
+      } else {
+        alert("Geocoder failed due to: " + status);
+      }
+    });
+  }
+</script> 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="initialize()">
 	<a id="skippy" class="sr-only sr-only-focusable" href="#content">
 		<div class="container">
 			<span class="skiplink-text"><?php _e( 'Skip to content', 'odin' ); ?></span>
@@ -34,9 +90,9 @@
 				<?php odin_the_custom_logo(); ?>
 
 				<?php if ( is_home() ) : ?>
-					<h1 class="site-title">
+					<h1 class="site-title" id="cidade">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<?php bloginfo( 'name' ); ?>
+				            <p id="demo"></p>
 						</a>
 					</h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
