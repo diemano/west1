@@ -26,7 +26,9 @@ define('DB_NAME', 'west1');
 define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '');
+
+define('DB_PASSWORD', 'facil123');
+
 
 /** Nome do host do MySQL */
 define('DB_HOST', 'localhost');
@@ -36,6 +38,13 @@ define('DB_CHARSET', 'utf8mb4');
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
+
+define( 'SCRIPT_DEBUG', true );
+
+
+@ini_set( 'display_errors', 1 );
+
+
 
 /**#@+
  * Chaves únicas de autenticação e salts.
@@ -50,14 +59,16 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'pN%twmRT>1IXey#iVTK70>P,p>68jyu5#3!ryEEU{Sz@6ShyffY13::F0%^/=#+$');
-define('SECURE_AUTH_KEY',  '?7tob_>(>_tTbYinNpk6kue4-R@R$A<cBXj{4h3wV Cdygjsuir^XqlWZE`10oS}');
-define('LOGGED_IN_KEY',    'ye6wIr+m^J<<YSX?i=T,{>0Y_~ y%YEB6wKTW6tkem<r$^}BQcZL`{!pQCCC{hz!');
-define('NONCE_KEY',        'JaWA[mwz=XM0E6JR&!LwoW0gSqHGnA?n=b8$}?&L@?%J0zVp1[a/7gPj0C%{:/{5');
-define('AUTH_SALT',        'rpjT7?pg8R/obI(}k}n%HK|KK`eNtPkTR&z+-k_!@7*l($[s`%EFt2#Je}WM-Y#T');
-define('SECURE_AUTH_SALT', 'xTO(Z-#i}#Px:~X+UFPTmoQ9R1O}h0>vum%X3%UiuHGMzE[=RE~8gMY7@Blz(nQC');
-define('LOGGED_IN_SALT',   'R>y!8,hh3`r$^&Da@AeuhM2BO|er,/D+7&<eoH.g.^Pa65oq(tDmhlSGES(c+Y>O');
-define('NONCE_SALT',       'Y8a?Sb1fT ^V>^%Bqulw_g]fqm|=+yV~g#<fygy/~AM4[j2}FnHS1.v0quz/F(p<');
+
+define('AUTH_KEY',         '3|0-PtQj4=ziu&%fvPCmBzB7~NA.K)y181&3dj/(0O 6Agk!`g]>Z.WZUpcI;n6V');
+define('SECURE_AUTH_KEY',  ' 5|Llk&__^>@^R{Br}-l,_;T_/[>)L)C:57d B9CqyPk4|tCYYd)|/AvZl~QFK,*');
+define('LOGGED_IN_KEY',    'owJc .@fw~dEWsMIl6>c#q5,9<*-zET-]T_()Y/!Rfd6$sM!ge7%les>],_]*(?=');
+define('NONCE_KEY',        ';zg@!BbkO%]#c:KC7a? S#:zGb*[/u_FbgfJ[#Y(t;;lHx7&{iss12F;zN4@Y>$F');
+define('AUTH_SALT',        ']QcJ]PWY>MT6$K0~ytRef.%/mhVEP#^eI*F58;GeOl+jy2(fhfjbs3J~j-xIi]MP');
+define('SECURE_AUTH_SALT', '+n??VVO;;Ms_`DsN44zy]h8rh&VECLW@;,_?EWF$t{>Lx)woo4{0nTR$h0Zf&wzK');
+define('LOGGED_IN_SALT',   'uN-rurL@vxN{{#8&4g+}w2*9ZvP3bP1 Fk8Ja;9?$=@XuH)$ziP=nRx!bLh/;%=,');
+define('NONCE_SALT',       '^uS8KBg#-byU7>H=WHNuF57{86xef;VPJ|94@TFL*8p;0y}zYv9 <dH+H`wlV`,=');
+
 
 /**#@-*/
 
@@ -82,7 +93,10 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
-define('WP_DEBUG', false);
+
+define('WP_DEBUG', TRUE);
+define( 'WP_DEBUG_DISPLAY', true );
+
 
 /* Isto é tudo, pode parar de editar! :) */
 
